@@ -1,0 +1,4 @@
+{
+  "main": "file-one.js",
+  "module": "../esm/file-one/file-one.js"
+}

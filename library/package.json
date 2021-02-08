@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "name": "library",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "rollup": "^2.38.5"
+  },
+  "scripts": {
+    "build": "yarn build:babel && yarn build:rollup",
+    "build:babel": "BABEL_ENV=cjs babel ./src --out-dir ./babel-build && BABEL_ENV=esm babel ./src --out-dir ./babel-build/esm",
+    "build:rollup": "rollup -c rollup.config.js"
+  },
+  "dependencies": {}
+}

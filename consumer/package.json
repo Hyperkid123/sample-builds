@@ -1,0 +1,22 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "jest": "^26.6.3",
+    "webpack": "^5.21.2",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "library": "file:../library"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "test": "jest"
+  }
+}
